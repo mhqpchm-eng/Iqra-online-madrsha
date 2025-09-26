@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ইকরা অন লাইন মাদ্রাসা</title>
+<style>
+    body { font-family: 'SolaimanLipi', sans-serif; margin:0; padding:0; background:#f9f9f9; }
+    header { background:#2c3e50; color:#fff; padding:15px; text-align:center; }
+    nav { background:#34495e; display:flex; flex-wrap:wrap; justify-content:center; }
+    nav button { margin:5px; padding:10px 15px; border:none; background:#1abc9c; color:#fff; cursor:pointer; border-radius:5px; transition:0.3s; }
+    nav button:hover { background:#16a085; }
+    section { padding:20px; display:none; }
+    section.active { display:block; }
+    h2 { color:#2c3e50; }
+    .icon-btn { display:inline-block; margin:5px; padding:10px; border:1px solid #ccc; border-radius:5px; cursor:pointer; transition:0.3s; }
+    .icon-btn:hover { background:#ecf0f1; }
+    input, button { padding:8px; margin:5px 0; }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>📘 ইকরা অন লাইন মাদ্রাসা</h1>
+    <p>পরিচালক: মোহাম্মদ আলী | স্থাপিত: ২০২৫ | যোগাযোগ: 01577004293</p>
+</header>
+
+<nav>
+    <button onclick="showSection('home')">🏠 হোম</button>
+    <button onclick="showSection('about')">🕌 পরিচিতি</button>
+    <button onclick="showSection('name')">🏷️ নামকরন</button>
+    <button onclick="showSection('department')">🏫 বিভাগ</button>
+    <button onclick="showSection('books')">📚 বই</button>
+    <button onclick="showSection('admission')">📝 ভর্তি ফরম</button>
+    <button onclick="showSection('registration')">🆔 রেজিস্ট্রেশন</button>
+    <button onclick="showSection('exam')">📝 পরীক্ষা</button>
+    <button onclick="showSection('contact')">☎️ যোগাযোগ</button>
+</nav>
+
+<section id="home" class="active">
+    <h2>স্বাগতম — ইকরা অন লাইন মাদ্রাসা</h2>
+    <p>আমাদের লক্ষ্য — কুরআন, হাদীস ও ইসলামী শিক্ষা অনলাইনে সহজভাবে শিশু, বয়স্ক ছেলে-মেয়েদের কাছে পৌঁছে দেওয়া।</p>
+</section>
+
+<section id="about">
+    <h2>মাদ্রাসার পরিচিতি</h2>
+    <p>ইকরা অন লাইন মাদ্রাসা ২০২৫ সালে প্রতিষ্ঠিত হয়। এখানে নূরানী, হিফজ ও কিতাব বিভাগের মাধ্যমে শিক্ষার্থীদের ইসলামিক শিক্ষার পাশাপাশি আধুনিক জ্ঞান প্রদান করা হয়।</p>
+</section>
+
+<section id="name">
+    <h2>মাদ্রাসার নামকরন</h2>
+    <p>মাদ্রাসার নাম রাখা হয়েছে <strong>“ইকরা”</strong>। কারণ আল্লাহর প্রথম ওহী ছিল — “ইকরা” (পড়ো)।</p>
+</section>
+
+<section id="department">
+    <h2>বিভাগসমূহ</h2>
+    <div>
+        <button onclick="alert('নূরানী বিভাগ: অক্ষর চিনা, হরকত, তাজবীদ শেখানো হয়')">নূরানী</button>
+        <button onclick="alert('হিফজ বিভাগ: কুরআন মুখস্থ শেখানো হয়')">হিফজ</button>
+        <button onclick="alert('কিতাব বিভাগ: আরবি, ফিকহ, হাদীস শেখানো হয়')">কিতাব</button>
+    </div>
+</section>
+
+<section id="books">
+    <h2>বই ম্যানেজমেন্ট</h2>
+    <p>আপনি PDF বই আপলোড করতে পারেন এবং ডাউনলোড লিঙ্ক তৈরি হবে।</p>
+    <div class="icon-btn" onclick="alert('নূরানী বই দেখানো হবে')">📝 নূরানী</div>
+    <div class="icon-btn" onclick="alert('হিফজ বই দেখানো হবে')">📝 হিফজ</div>
+    <div class="icon-btn" onclick="alert('কিতাব বই দেখানো হবে')">📝 কিতাব</div>
+</section>
+
+<section id="admission">
+    <h2>ভর্তি ফরম ও পেমেন্ট</h2>
+    <p>ভর্তি ফি: <strong>1000 টাকা</strong><br>
+       বিকাশে পাঠাবেন: 01783175109<br>
+       রিচিভ কনফার্মেশন WhatsApp: 01577004293
+    </p>
+    <button onclick="alert('ভর্তি ফরম সাবমিট ডেমো')">ভর্তি ফরম সাবমিট</button>
+</section>
+
+<section id="registration">
+    <h2>রেজিস্ট্রেশন তালিকা</h2>
+    <p>নতুন শিক্ষার্থীদের রেজিস্ট্রেশন ডেটা এখানে দেখানো হবে।</p>
+</section>
+
+<section id="exam">
+    <h2>পরীক্ষা</h2>
+    <button onclick="alert('পরীক্ষা যোগ করুন')">Add Exam</button>
+</section>
+
+<section id="contact">
+    <h2>যোগাযোগ</h2>
+    <p>মোবাইল: 01577004293</p>
+    <p>
+        📞 কল &nbsp; ✉️ SMS &nbsp;
+        <a href="https://wa.me/01577004293" target="_blank">💬 WhatsApp</a> &nbsp;
+        <a href="https://facebook.com" target="_blank">🌐 Facebook</a>
+    </p>
+</section>
+
+<script>
+function showSection(id) {
+    const sections = document.querySelectorAll('section');
+    sections.forEach(sec => sec.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+}
+</script>
+
+</body>
+</html>
